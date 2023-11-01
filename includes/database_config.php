@@ -6,3 +6,4 @@ const DB_USER = 'root';
 const DB_NAME = 'project';
 const DB_PASSWORD = '';
 const DB_RESIDENT_TABLE = 'resident';
+const DB_COMPLAINT_TABLE = 'complaint';
