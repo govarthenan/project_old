@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="authentication_style.css" />
+    </head>
+    <body>
+        <h2>WELCOME</h2>
+        <div class="container" id="container">
+            <form
+                action="sign_up.php"
+                method="post"
+                enctype="multipart/form-data"
+            >
+                <div class="form-container sign-up-container">
+                    <h1>Personal Info</h1>
+                    <input
+                        type="number"
+                        name="floor"
+                        placeholder="Apartment Floor"
+                        required
+                    />
+                    <input
+                        type="number"
+                        name="door"
+                        placeholder="Apartment No"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="id"
+                        placeholder="National Identity No"
+                        required
+                    />
+                    <br />
+                    <input
+                        type="file"
+                        id="file-upload"
+                        name="verification"
+                        accept="image/*"
+                        required
+                    />
+
+                    <button type="submit">Sign Up</button>
+                </div>
+                <div class="form-container sign-in-container">
+                    <h1>Personal Info</h1>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        autocomplete="new-password"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="password-repeated"
+                        name="password-repeated"
+                        placeholder="Re enter Password"
+                        autocomplete="new-password"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Contact No"
+                        required
+                    />
+                </div>
+            </form>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>
+                            To keep connected with us please log in with in your
+                            apartment account
+                        </p>
+                        <button class="ghost" id="reverse-transition-button">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Click here to complete sign up</p>
+                        <button class="ghost" id="forward-transition-button">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./authenticatin_animation_script.js"></script>
+    </body>
+</html>
