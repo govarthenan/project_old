@@ -1,6 +1,6 @@
 <?php
 
-require_once '../includes/database_connect.php';
+require_once '../../includes/database_connect.php';
 
 // check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $verificationPictureData = $conn->real_escape_string($verificationPictureData);
 
     // ##write to database  
-    $sql = "INSERT INTO resident (name, email, password, phone, floor, door, identification, verification) VALUES ('$name', '$email', '$password', '$phone', '$floor', '$door', '$id', '$verificationPictureData')";
+    $sql = "INSERT INTO " . DB_RESIDENT_TABLE . " (name, email, password, phone, floor, door, id) VALUES ('$name', '$email', '$password', '$phone', '$floor', '$door', '$id')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New user created successfully";
