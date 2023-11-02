@@ -1,5 +1,4 @@
 <?php
-//session_start();
 require_once("../../includes/database_connect.php");
 // Get username
 $sql = "SELECT name FROM " . DB_STAFF_TABLE . " WHERE user = '" . $_SESSION['user'] . "'";

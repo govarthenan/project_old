@@ -1,42 +1,22 @@
 <?php
 session_start();
-include_once('../../dashboards/resident/sidenav_resident.php');
+include_once('../../dashboards/manager/sidenav_manager.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar-view</title>
-    <link rel="stylesheet" href="../../data/public/css/styles.css">
-    <script src="index.js"></script>
-
-</head>
-
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calendar</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calendar</title>
-</head>
-
-<body>
-    <div class="calendar1">
-        <h1 style="margin:30vh 35vw 0vh 40vw"> Calendar</h1>
-        <table>
+      <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>complaints </title>
+        <link rel="stylesheet" href="../../data/public/css/styles.css" />
+      </head>
+      
+      <body style="background-color: #d4def5;">
+      <div class="calendar1">
+          <br>
+          <br>
+        <h1 style="margin:20vh 50vw 0vh 35vw"> </h1>
+        <table style="margin-left:20vw">
             <thead>
                 <tr>
                     <th>Mon</th>
@@ -86,18 +66,21 @@ include_once('../../dashboards/resident/sidenav_resident.php');
                     <td>27</td>
                 </tr>
                 <tr>
-                    <td>28</td>
+                    <td style="background-color: #507d8f">28</td>
                     <td>29</td>
                     <td>30</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <button class="action-button view-button"style="margin-top:80vh;margin-bottom:17vh;margin-left:-15vw" onclick="viewRow(1)">View</button>
-                <button class="action-button edit-button" style="margin-top:80vh;margin-bottom:17vh" onclick="editRow(1)">Edit</button>
-                <button class="action-button delete-button"style="margin-top:80vh;margin-bottom:17vh" onclick="deleteRow(1)">Delete</button>
-</body>
-</html>
-
-
-
+          <div class="container" style="margin-left:60%;margin-top:7vh ">
+            <h1><b>Event Details</b></h1>
+            <p><b>Date:</b> 28/11/2023</p>
+            <p><b>Event Catergory:</b>Payments</p>
+            <p><b>Subject:</b>Maintenance Payment</p>
+            <p><b>Description:</b>Payments that related to essential services such as landscaping, security, and common area upkeep.</p>
+            <button class="action-button edit-button1" onclick="editRow(1)">Edit</button>
+            <button class="action-button delete-button1" onclick="deleteRow(1)">Delete</button>
+          </div>
+      </body>
+      </html>

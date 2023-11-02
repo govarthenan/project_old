@@ -66,7 +66,7 @@ include_once('../../dashboards/resident/sidenav_resident.php');
                     <td>27</td>
                 </tr>
                 <tr>
-                    <td>28</td>
+                    <td style="background-color: #507d8f">28</td>
                     <td>29</td>
                     <td>30</td>
                 </tr>

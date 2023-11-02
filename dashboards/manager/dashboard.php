@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('./sidenav_manager.php');
+require_once('sidenav_manager.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,15 +21,16 @@ require_once('./sidenav_manager.php');
 <div class="dashboard-body">
 
     <div class="dashboard-box">
-        <div class="dashboard-icons" style="align-items: center; justify-content: center;">
-            <div>
-                <i class="fa-solid fa-toolbox fa-2x"></i>
-                <h3 style="text-align: center;">Calendar</h3>
+        <a href="../../manager_features/calendar/calender.php">
+            <div class="dashboard-icons" style="align-items: center; justify-content: center;">
+                <div>
+                    <i class="fa-solid fa-toolbox fa-2x"></i>
+                    <h3 style="text-align: center;">Calendar</h3>
+
+                </div>
 
             </div>
-
-        </div>
-
+        </a>
         <div class="dashboard-icons">
             <div>
                 <i class="fa-solid fa-toolbox fa-2x"></i>
@@ -39,23 +40,27 @@ require_once('./sidenav_manager.php');
 
         </div>
 
-        <div class="dashboard-icons">
-            <div>
-                <i class="fa-solid fa-toolbox fa-2x"></i>
-                <h3>Amenities</h3>
+        <a href="../../manager_features/amenities/AM.html">
+            <div class="dashboard-icons">
+                <div>
+                    <i class="fa-solid fa-toolbox fa-2x"></i>
+                    <h3>Amenities</h3>
+
+                </div>
 
             </div>
+        </a>
 
-        </div>
+        <a href="../../manager_features/payments/payment_overview.html">
+            <div class="dashboard-icons">
+                <div>
+                    <i class="fa-solid fa-toolbox fa-2x"></i>
+                    <h3>Payments</h3>
 
-        <div class="dashboard-icons">
-            <div>
-                <i class="fa-solid fa-toolbox fa-2x"></i>
-                <h3>Payments</h3>
+                </div>
 
             </div>
-
-        </div>
+        </a>
 
         <div class="dashboard-icons">
             <div>

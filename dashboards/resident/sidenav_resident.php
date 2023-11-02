@@ -114,7 +114,8 @@ $user_name = $result->fetch_assoc()['name'];
             <hr>
 
             <nav class="navigation">
-                <a href="../../resident_features/calendar/calender.php" style="text-decoration: none; color: inherit;">
+                <a href="../../resident_features/calendar/calender-event-view.php"
+                   style="text-decoration: none; color: inherit;">
                     <div class="navi-item">
                         <p style="margin-left:1.5rem">Calendar</p>
                     </div>
@@ -155,11 +156,11 @@ $user_name = $result->fetch_assoc()['name'];
                     </a>
                 </div>
 
-                <div class="navi-item">
-                    <a href="#" style="text-decoration: none; color: inherit;">
-                        <p style="margin-left:1.5rem">Support</p>
-                    </a>
-                </div>
+                <a href="../../resident_features/support/support.php">
+                    <div class="navi-item">
+                            <p style="margin-left:1.5rem">Support</p>
+                    </div>
+                </a>
 
             </nav>
     </aside>
