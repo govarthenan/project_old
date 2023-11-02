@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('sidenav.php');
+require_once('../../dashboards/resident/sidenav_resident.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@ include_once('sidenav.php');
         <h1 style="text-align: center;">Complaints</h1>
         <p>Please fill out the following information to make your complain</p>
         <div class="form-group">
-            <form action="./backend/complaint_create.php" method="post">
+            <form action="backend/complaints_create.php" method="post">
 
                 <label for="complaint_subject"> Subject:</label>
                 <input type="text" id="complaint_subject" name="complaint_subject" placeholder="Your problem in a few words..." maxlength="100" required>
@@ -36,6 +36,7 @@ include_once('sidenav.php');
                 <select id="complaint_category" name="complaint_category" required>
                     <option value="billing">Billing</option>
                     <option value="platform">Platform</option>
+                    <option value="issues">Issues</option>
                     <option value="amenities">Amenities</option>
                     <option value="services">Services</option>
                     <option value="other">Other</option>
@@ -48,7 +49,7 @@ include_once('sidenav.php');
                         <textarea rows="5" cols="51" id="complaint_description" name="complaint_description" maxlength="1000" placeholder="A bit more information would help us solve your problem faster!"></textarea>
                     </label>
                 </div>
-                <input type="submit" value="Submit complain" style="display: block; margin: 0 auto;">
+                <input type="submit" name="submit" value="Submit complain" style="display: block; margin: 0 auto;">
             </form>
         </div>
     </div>

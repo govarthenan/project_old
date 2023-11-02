@@ -7,3 +7,4 @@ const DB_NAME = 'project';
 const DB_PASSWORD = '';
 const DB_RESIDENT_TABLE = 'resident';
 const DB_COMPLAINT_TABLE = 'complaint';
+const DB_STAFF_TABLE = 'staff';

@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../includes/database_connect.php';
+require_once('../../includes/database_connect.php');
 
 // check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

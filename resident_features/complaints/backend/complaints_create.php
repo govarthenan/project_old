@@ -2,8 +2,8 @@
 // process data coming from complaints-form.php via POST
 session_start();
 
-include '../../includes/database_connect.php';
-include '../../includes/functions_library.php';
+require_once('../../../includes/database_connect.php');
+require_once('../../../includes/functions_library.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // perform basic sanitization of all fields in _POST

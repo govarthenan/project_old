@@ -1,0 +1,62 @@
+<?php
+require_once('../../dashboards/resident/sidenav_resident.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Complaints log</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="table">
+    <table>
+        <thead>
+        <tr>
+            <th> Date</th>
+            <th>Complaint Catergory</th>
+            <th>Description</th>
+            <th>Attachment</th>
+            <th>Action</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2023-10-27</td>
+            <td>Service</td>
+            <td>Water Issue</td>
+            <td>-</td>
+
+
+        </tr>
+        <tr>
+            <td>2023-10-28</td>
+            <td>Billing</td>
+            <td> utility payment</td>
+            <td>-</td>
+            <td>
+                <button class="action-button view-button" onclick="viewRow(1)">View</button>
+                <button class="action-button edit-button" onclick="editRow(1)">Edit</button>
+                <button class="action-button delete-button" onclick="deleteRow(1)">Delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td>2023-09-27</td>
+            <td>Issue</td>
+            <td>parking</td>
+            <td>-</td>
+            <td>
+                <button class="action-button view-button" onclick="viewRow(1)">View</button>
+                <button class="action-button edit-button" onclick="editRow(1)">Edit</button>
+                <button class="action-button delete-button" onclick="deleteRow(1)">Delete</button>
+            </td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
