@@ -64,7 +64,7 @@ $result = $conn->query($sql);
         echo "</tbody>";
         echo "</table>";
     } else {
-        echo "0 results";
+        echo "<h2>No complaints logged yet!</h2>";
     }
     ?>
 </div>

@@ -86,7 +86,6 @@ include_once('../../dashboards/resident/sidenav_resident.php');
     <ul>
         <li><b>Email:</b><i> techsupport@example.com</i></li>
     </ul>
-    </ul>
 
     <p><b> Registration</b></p>
 
@@ -115,6 +114,6 @@ include_once('../../dashboards/resident/sidenav_resident.php');
     <p><b>Payments</b></p>
 
     <p><b>Complaints</b></p>
-
+</div>
 
 </body>
